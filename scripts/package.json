@@ -9,7 +9,8 @@
     "xml2js": "^0.4.23"
   },
   "scripts": {
-    "start": "ts-node build.ts"
+    "build": "ts-node build.ts",
+    "bump": "ts-node bump.ts"
   },
   "devDependencies": {
     "@types/xml2js": "^0.4.8"

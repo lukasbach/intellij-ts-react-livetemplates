@@ -1,0 +1,27 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Gradle build
+        run: |
+          ./gradlew buildPlugin
+          ./gradlew nodeSetup
+          ./gradlew yarn
+          ./gradlew yarn_build
+      - name: Commit new release
+        run: |
+          VERSION=`./gradlew yarn_bump`
+          echo "Pushing $VERSION"
+          git config --global user.name 'lukasbachbot'
+          git config --global user.email 'bot@noreply.lukasbach.com'
+          git status
+        #git tag $VERSION
+        #git add .
+        #git commit -m "Releasing $VERSION"
+        #git push

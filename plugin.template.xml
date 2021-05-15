@@ -1,0 +1,36 @@
+<idea-plugin>
+  <id>com.lukasbach.intellij.snippets.typescriptreact</id>
+  <name>Live Templates for Typescript and React</name>
+  <!-- The <version> of this plugin is set by patchPluginXml.version in build.gradle -->
+  <vendor email="lbach@outlook.de" url="https://lukasbach.com">Lukas Bach</vendor>
+
+  <description><![CDATA[
+      <p>Live templates for Typescript and React, including React hooks!</p>
+
+      <p>Currently supported:</p>
+
+      %DOCS%
+
+      <p></p>
+
+      <p>Checkout <a href="https://github.com/lukasbach/intellij-ts-react-livetemplates">github.com/lukasbach/intellij-ts-react-livetemplates</a>
+      for details on available snippets.</p>
+    ]]></description>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <defaultLiveTemplates file="/templates/TypedReact.xml"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>

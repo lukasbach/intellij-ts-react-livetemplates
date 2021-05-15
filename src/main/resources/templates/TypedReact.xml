@@ -1,0 +1,165 @@
+<templateSet group="TypedReact">
+    <template name="uses" value="const [$VAR$, set$VAR_SET$] = useState($DEFAULT_VAL$);$END$" description="React.useState()" toReformat="true" toShortenFQNames="true">
+        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="VAR_SET" expression="capitalize(VAR)" defaultValue="" alwaysStopAt="false" />
+        <variable name="DEFAULT_VAL" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JSX_HTML" value="false" />
+            <option name="JS_CLASS" value="false" />
+        </context>
+    </template>
+    <template name="usee" value="useEffect(() =&gt; {&#10;    $END$&#10;}, [$1$]);" description="React.useEffect()" toReformat="true" toShortenFQNames="true">
+        <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JSX_HTML" value="false" />
+            <option name="JS_CLASS" value="false" />
+            <option name="JS_TOP_LEVEL_STATEMENT" value="false" />
+        </context>
+    </template>
+    <template name="useh" value="const $3$ = use$1$($2$);$END$" description="React use Hook" toReformat="true" toShortenFQNames="true">
+        <variable name="1" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+        <variable name="2" expression="completeSmart()" defaultValue="{}" alwaysStopAt="true" />
+        <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JSX_HTML" value="false" />
+            <option name="JS_CLASS" value="false" />
+            <option name="JS_TOP_LEVEL_STATEMENT" value="false" />
+        </context>
+    </template>
+    <template name="rfc" value="export const $1$: React.FC&lt;{$2$}&gt; = props =&gt; {&#10;    return (&#10;        &lt;$3$&gt;&#10;            $END$&#10;        &lt;/$3$&gt;&#10;    );&#10;};" description="React Functional Component" toReformat="true" toShortenFQNames="true">
+        <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="rfct" value="export const $1$ = &lt;$2$&gt;(props: PropsWithChildren&lt;$3$&gt;) =&gt; {&#10;    return (&#10;        &lt;$4$&gt;&#10;            $END$&#10;        &lt;/$4$&gt;&#10;    );&#10;};" description="React typed Functional Component" toReformat="true" toShortenFQNames="true">
+        <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="3" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="4" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="rfr" value="export const $COMP$ = React.forwardRef&lt;HTML$ELEMENT_TYPE$ | null, $PROPS$&gt;((props, ref) =&gt; {&#10;    const elementRef = useRef&lt;HTML$ELEMENT_TYPE$&gt;(null);&#10;    useImperativeHandle&lt;HTML$ELEMENT_TYPE$ | null, HTML$ELEMENT_TYPE$ | null&gt;(&#10;        ref,&#10;        () =&gt; elementRef.current &amp;&amp; {&#10;            ...elementRef.current,&#10;        },&#10;    );&#10;    $END$&#10;    return (&#10;        &lt;$INNER_COMP$ ref={elementRef} /&gt;&#10;    );&#10;});" description="React forward Ref" toReformat="true" toShortenFQNames="true">
+        <variable name="COMP" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="ELEMENT_TYPE" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+        <variable name="PROPS" expression="" defaultValue="{}" alwaysStopAt="true" />
+        <variable name="INNER_COMP" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="int" value="export interface $1$ {&#10;    $END$&#10;}" description="Typescript Interface" toReformat="true" toShortenFQNames="true">
+        <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="type" value="export type $1$ = {&#10;    $END$&#10;}" description="Typescript Type" toReformat="true" toShortenFQNames="true">
+        <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="arr" value="($1$) =&gt; $2$" description="Anonymous arrow function" toReformat="true" toShortenFQNames="true">
+        <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JSX_HTML" value="false" />
+        </context>
+    </template>
+    <template name="el" value="&lt;$ELEMENT$$PROPS$&gt;&#10;    $END$&#10;&lt;/$ELEMENT$&gt;" description="JSX element" toReformat="true" toShortenFQNames="true">
+        <variable name="ELEMENT" expression="" defaultValue="div" alwaysStopAt="true" />
+        <variable name="PROPS" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JSX_HTML" value="true" />
+        </context>
+    </template>
+    <template name="rcctx" value="type $CONTEXT_NAME_TYPE$ContextType = {&#10;    $END$&#10;};&#10;&#10;const $CONTEXT_NAME$Context = React.createContext&lt;$CONTEXT_NAME$ContextType&gt;($DEFAULT_VALUE$);&#10;export const use$CONTEXT_NAME_HOOK$ = () =&gt; React.useContext($CONTEXT_NAME$Context);&#10;&#10;export const $CONTEXT_NAME_PROVIDER$Provider: React.FC = props =&gt; {&#10;    return (&#10;        &lt;$CONTEXT_NAME$Context.Provider value={$VAL$}&gt;&#10;            {props.children}&#10;        &lt;/$CONTEXT_NAME$Context.Provider&gt;&#10;    );&#10;};" description="React create new Context with type, hook and provider" toReformat="true" toShortenFQNames="true">
+        <variable name="CONTEXT_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="CONTEXT_NAME_TYPE" expression="CONTEXT_NAME" defaultValue="" alwaysStopAt="false" />
+        <variable name="DEFAULT_VALUE" expression="" defaultValue="{}" alwaysStopAt="true" />
+        <variable name="CONTEXT_NAME_HOOK" expression="capitalize(CONTEXT_NAME)" defaultValue="" alwaysStopAt="false" />
+        <variable name="CONTEXT_NAME_PROVIDER" expression="capitalize(CONTEXT_NAME)" defaultValue="" alwaysStopAt="false" />
+        <variable name="VAL" expression="" defaultValue="{}" alwaysStopAt="true" />
+        <context>
+            <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="ifs" value="import fs from 'fs';" description="import fs" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="ipath" value="import path from 'path';" description="import path" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="funarr" value="const $VAR_NAME$ = ($PARAM$) =&gt; $END$;" description="Arrow function variable" toReformat="true" toShortenFQNames="true">
+        <variable name="VAR_NAME" expression="jsSuggestVariableName()" defaultValue="" alwaysStopAt="true" />
+        <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="fun" value="function $FUNCTION_NAME$($PARAM$) {&#10;    $END$&#10;}" description="Function" toReformat="true" toShortenFQNames="true">
+        <variable name="FUNCTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="asyncarr" value="async ($1$) =&gt; $2$" description="Async anonymous arrow function" toReformat="true" toShortenFQNames="true">
+        <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="2" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="prom" value="new Promise&lt;$TYPE$((res, rej) =&gt; {&#10;    $END$&#10;});" description="New Promise" toReformat="true" toShortenFQNames="true">
+        <variable name="TYPE" expression="" defaultValue="void" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="timeout" value="setTimeout(() =&gt; $END$, $TIME$);" description="setTimeout" toReformat="true" toShortenFQNames="true">
+        <variable name="TIME" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="interval" value="setInterval(() =&gt; $END$, $TIME$);" description="setInterval" toReformat="true" toShortenFQNames="true">
+        <variable name="TIME" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="usem" value="const $VAR$ = useMemo(() =&gt; $RETURN$, [$DEP$]);" description="React.useMemo()" toReformat="true" toShortenFQNames="true">
+        <variable name="RETURN" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+        <variable name="DEP" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JS_CLASS" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="usec" value="const $VAR$ = useCallback(() =&gt; $RETURN$, [$DEP$]);" description="React.useCallback()" toReformat="true" toShortenFQNames="true">
+        <variable name="RETURN" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+        <variable name="DEP" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JS_CLASS" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+</templateSet>

@@ -1,0 +1,78 @@
+<idea-plugin>
+  <id>com.lukasbach.intellij.snippets.typescriptreact</id>
+  <name>Live Templates for Typescript and React</name>
+  <!-- The <version> of this plugin is set by patchPluginXml.version in build.gradle -->
+  <vendor email="lbach@outlook.de" url="https://lukasbach.com">Lukas Bach</vendor>
+
+  <description><![CDATA[
+      <p>Live templates for Typescript and React, including React hooks!</p>
+
+      <p>Currently supported:</p>
+
+      
+<li><tt>uses</tt>: <em>React.useState()</em></li>
+
+<li><tt>usee</tt>: <em>React.useEffect()</em></li>
+
+<li><tt>useh</tt>: <em>React use Hook</em></li>
+
+<li><tt>rfc</tt>: <em>React Functional Component</em></li>
+
+<li><tt>rfct</tt>: <em>React typed Functional Component</em></li>
+
+<li><tt>rfr</tt>: <em>React forward Ref</em></li>
+
+<li><tt>int</tt>: <em>Typescript Interface</em></li>
+
+<li><tt>type</tt>: <em>Typescript Type</em></li>
+
+<li><tt>arr</tt>: <em>Anonymous arrow function</em></li>
+
+<li><tt>el</tt>: <em>JSX element</em></li>
+
+<li><tt>rcctx</tt>: <em>React create new Context with type, hook and provider</em></li>
+
+<li><tt>ifs</tt>: <em>import fs</em></li>
+
+<li><tt>ipath</tt>: <em>import path</em></li>
+
+<li><tt>funarr</tt>: <em>Arrow function variable</em></li>
+
+<li><tt>fun</tt>: <em>Function</em></li>
+
+<li><tt>asyncarr</tt>: <em>Async anonymous arrow function</em></li>
+
+<li><tt>prom</tt>: <em>New Promise</em></li>
+
+<li><tt>timeout</tt>: <em>setTimeout</em></li>
+
+<li><tt>interval</tt>: <em>setInterval</em></li>
+
+<li><tt>usem</tt>: <em>React.useMemo()</em></li>
+
+<li><tt>usec</tt>: <em>React.useCallback()</em></li>
+
+
+      <p></p>
+
+      <p>Checkout <a href="https://github.com/lukasbach/intellij-ts-react-livetemplates">github.com/lukasbach/intellij-ts-react-livetemplates</a>
+      for details on available snippets.</p>
+    ]]></description>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <defaultLiveTemplates file="/templates/TypedReact.xml"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>

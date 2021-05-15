@@ -1,0 +1,2 @@
+rootProject.name = 'ts_react_livetemplates'
+include("scripts")

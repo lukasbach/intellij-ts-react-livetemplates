@@ -1,0 +1,17 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^15.3.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4",
+    "xml2js": "^0.4.23"
+  },
+  "scripts": {
+    "start": "ts-node build.ts"
+  },
+  "devDependencies": {
+    "@types/xml2js": "^0.4.8"
+  }
+}

@@ -1,0 +1,4 @@
+build
+.gradle
+scripts/.gradle
+scripts/node_modules

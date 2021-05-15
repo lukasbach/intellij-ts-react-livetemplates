@@ -7,4 +7,5 @@ import * as path from 'path';
   const nextVersion = parseInt(version) + 1;
   const updatedBuildFile = buildFile.replace(new RegExp(`version '1.0.${version}'`), `version '1.0.${nextVersion}'`);
   await fs.promises.writeFile(path.join(__dirname, '../build.gradle'), updatedBuildFile);
+  console.log(`v1.0.${nextVersion}`);
 })();

@@ -28,3 +28,7 @@ patchPluginXml {
     <em>v1.0.0</em><br />
     Initial Release"""
 }
+
+publishPlugin {
+  token = System.getenv("INTELLIJ_DEPLOY")
+}

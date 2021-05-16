@@ -20,12 +20,11 @@ jobs:
           INTELLIJ_DEPLOY: ${{ secrets.INTELLIJ_DEPLOY }}
         run: |
           VERSION=`./gradlew yarn_bump`
-          echo "Pushing $VERSION"
-          ./gradlew publishPlugin
           git config --global user.name 'lukasbachbot'
           git config --global user.email 'bot@noreply.lukasbach.com'
           git status
-          git tag $VERSION
           git add .
           git commit -m "Releasing $VERSION"
+          git tag $VERSION
           git push
+        #./gradlew publishPlugin

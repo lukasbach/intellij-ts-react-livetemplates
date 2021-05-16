@@ -24,7 +24,7 @@ jobs:
           git config --global user.email 'bot@noreply.lukasbach.com'
           git status
           git add .
-          git commit -m "Releasing $VERSION"
-          git tag $VERSION
           git push
+        #git tag $VERSION
+        #git commit -m "Releasing"
         #./gradlew publishPlugin

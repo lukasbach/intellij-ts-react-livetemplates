@@ -1,5 +1,9 @@
 # IntelliJ Live Templates for Typescript and React
 
+[![Download](https://img.shields.io/badge/Get-from%20Jetbrains%20Marketplace-brightgreen)](https://plugins.jetbrains.com/plugin/16796-live-templates-for-typescript-and-react)
+[![Build and verify](https://github.com/lukasbach/intellij-ts-react-livetemplates/actions/workflows/verify.yml/badge.svg)](https://github.com/lukasbach/intellij-ts-react-livetemplates/actions/workflows/verify.yml)
+[![Deploy](https://github.com/lukasbach/intellij-ts-react-livetemplates/actions/workflows/deploy.yml/badge.svg)](https://github.com/lukasbach/intellij-ts-react-livetemplates/actions/workflows/deploy.yml)
+
 Live templates for Typescript and typed React code, for IntelliJ Idea, 
 Webstorm, PHPStorm and other Jetbrains IDEs. With sensible variable
 expressions and useful skeleton templates.

@@ -1,0 +1,15 @@
+name: Deploy
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Gradle build and verify
+        run: |
+          chmod +x ./gradlew
+          ./gradlew buildPlugin
+          ./gradlew verifyPlugin

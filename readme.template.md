@@ -1,13 +1,13 @@
-# IntelliJ Live Templates for Typescript and React
+# IntelliJ Live Templates for TypeScript and React
 
-[![Download](https://img.shields.io/badge/Get-from%20Jetbrains%20Marketplace-brightgreen)](https://plugins.jetbrains.com/plugin/16796-live-templates-for-typescript-and-react)
+[![Download](https://img.shields.io/badge/Get-from%20JetBrains%20Marketplace-brightgreen)](https://plugins.jetbrains.com/plugin/16796-live-templates-for-typescript-and-react)
 [![Build and verify](https://github.com/lukasbach/intellij-ts-react-livetemplates/actions/workflows/verify.yml/badge.svg)](https://github.com/lukasbach/intellij-ts-react-livetemplates/actions/workflows/verify.yml)
 [![Deploy](https://github.com/lukasbach/intellij-ts-react-livetemplates/actions/workflows/deploy.yml/badge.svg)](https://github.com/lukasbach/intellij-ts-react-livetemplates/actions/workflows/deploy.yml)
 ![JetBrains plugins](https://img.shields.io/jetbrains/plugin/d/16796)
 ![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/r/rating/16796)
 
-Live templates for Typescript and typed React code, for IntelliJ Idea, 
-Webstorm, PHPStorm and other Jetbrains IDEs. With sensible variable
+Live templates for TypeScript and typed React code, for IntelliJ IDEA,
+WebStorm, PHPStorm and other JetBrains IDEs. With sensible variable
 expressions and useful skeleton templates.
 
 Supported templates:

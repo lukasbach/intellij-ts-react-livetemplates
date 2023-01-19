@@ -1,13 +1,13 @@
-# IntelliJ Live Templates for Typescript and React
+# IntelliJ Live Templates for TypeScript and React
 
-[![Download](https://img.shields.io/badge/Get-from%20Jetbrains%20Marketplace-brightgreen)](https://plugins.jetbrains.com/plugin/16796-live-templates-for-typescript-and-react)
+[![Download](https://img.shields.io/badge/Get-from%20JetBrains%20Marketplace-brightgreen)](https://plugins.jetbrains.com/plugin/16796-live-templates-for-typescript-and-react)
 [![Build and verify](https://github.com/lukasbach/intellij-ts-react-livetemplates/actions/workflows/verify.yml/badge.svg)](https://github.com/lukasbach/intellij-ts-react-livetemplates/actions/workflows/verify.yml)
 [![Deploy](https://github.com/lukasbach/intellij-ts-react-livetemplates/actions/workflows/deploy.yml/badge.svg)](https://github.com/lukasbach/intellij-ts-react-livetemplates/actions/workflows/deploy.yml)
 ![JetBrains plugins](https://img.shields.io/jetbrains/plugin/d/16796)
 ![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/r/rating/16796)
 
-Live templates for Typescript and typed React code, for IntelliJ Idea, 
-Webstorm, PHPStorm and other Jetbrains IDEs. With sensible variable
+Live templates for TypeScript and typed React code, for IntelliJ IDEA,
+WebStorm, PHPStorm and other JetBrains IDEs. With sensible variable
 expressions and useful skeleton templates.
 
 Supported templates:
@@ -18,8 +18,8 @@ Supported templates:
 - `rfc`: _React Functional Component_
 - `rfct`: _React typed Functional Component_
 - `rfr`: _React forward Ref_
-- `int`: _Typescript Interface_
-- `type`: _Typescript Type_
+- `int`: _TypeScript Interface_
+- `type`: _TypeScript Type_
 - `arr`: _Anonymous arrow function_
 - `el`: _JSX element_
 - `rcctx`: _React create new Context with type, hook and provider_
@@ -154,7 +154,7 @@ Variables:
 |`PROPS`|`-`|{}|false|
 |`INNER_COMP`|`completeSmart()`||false|
 
-### Typescript Interface
+### TypeScript Interface
 
 Invoked via `int`.
 
@@ -169,7 +169,7 @@ Variables:
 |----|----------|-------------|---------------|
 |`1`|`-`||false|
 
-### Typescript Type
+### TypeScript Type
 
 Invoked via `type`.
 

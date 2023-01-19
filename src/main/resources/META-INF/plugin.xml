@@ -1,15 +1,15 @@
 <idea-plugin>
   <id>com.lukasbach.intellij.snippets.typescriptreact</id>
-  <name>Live Templates for Typescript and React</name>
+  <name>Live Templates for TypeScript and React</name>
   <!-- The <version> of this plugin is set by patchPluginXml.version in build.gradle -->
   <vendor email="lbach@outlook.de" url="https://lukasbach.com">Lukas Bach</vendor>
 
   <description><![CDATA[
-      <p>Live templates for Typescript and React, including React hooks!</p>
+      <p>Live templates for TypeScript and React, including React hooks!</p>
 
       <p>Currently supported:</p>
 
-      
+
 <li><tt>uses</tt>: <em>React.useState()</em></li>
 
 <li><tt>usee</tt>: <em>React.useEffect()</em></li>
@@ -22,9 +22,9 @@
 
 <li><tt>rfr</tt>: <em>React forward Ref</em></li>
 
-<li><tt>int</tt>: <em>Typescript Interface</em></li>
+<li><tt>int</tt>: <em>TypeScript Interface</em></li>
 
-<li><tt>type</tt>: <em>Typescript Type</em></li>
+<li><tt>type</tt>: <em>TypeScript Type</em></li>
 
 <li><tt>arr</tt>: <em>Anonymous arrow function</em></li>
 

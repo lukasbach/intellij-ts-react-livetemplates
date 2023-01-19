@@ -55,13 +55,13 @@
             <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
-    <template name="int" value="export interface $1$ {&#10;    $END$&#10;}" description="Typescript Interface" toReformat="true" toShortenFQNames="true">
+    <template name="int" value="export interface $1$ {&#10;    $END$&#10;}" description="TypeScript Interface" toReformat="true" toShortenFQNames="true">
         <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
         </context>
     </template>
-    <template name="type" value="export type $1$ = {&#10;    $END$&#10;}" description="Typescript Type" toReformat="true" toShortenFQNames="true">
+    <template name="type" value="export type $1$ = {&#10;    $END$&#10;}" description="TypeScript Type" toReformat="true" toShortenFQNames="true">
         <variable name="1" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="TS_TOP_LEVEL_STATEMENT" value="true" />

@@ -1,11 +1,11 @@
 <idea-plugin>
   <id>com.lukasbach.intellij.snippets.typescriptreact</id>
-  <name>Live Templates for Typescript and React</name>
+  <name>Live Templates for TypeScript and React</name>
   <!-- The <version> of this plugin is set by patchPluginXml.version in build.gradle -->
   <vendor email="lbach@outlook.de" url="https://lukasbach.com">Lukas Bach</vendor>
 
   <description><![CDATA[
-      <p>Live templates for Typescript and React, including React hooks!</p>
+      <p>Live templates for TypeScript and React, including React hooks!</p>
 
       <p>Currently supported:</p>
 

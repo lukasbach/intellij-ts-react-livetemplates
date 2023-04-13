@@ -9,7 +9,7 @@
 
       <p>Currently supported:</p>
 
-
+      
 <li><tt>uses</tt>: <em>React.useState()</em></li>
 
 <li><tt>usee</tt>: <em>React.useEffect()</em></li>

@@ -23,7 +23,7 @@ buildSearchableOptions {
 patchPluginXml {
   version = project.version
   sinceBuild = '202'
-  untilBuild = '223.*' // https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html#intellij-platform-based-products-of-recent-ide-versions
+  untilBuild = '231.*' // https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html#intellij-platform-based-products-of-recent-ide-versions
   changeNotes.set("<em>v1.0.0</em>")
   // changeNotes """
   //   <em>v1.0.0</em><br />

@@ -1,11 +1,11 @@
 plugins {
   id 'java'
-  id 'org.jetbrains.intellij' version '1.13.3'
+  id 'org.jetbrains.intellij' version '1.15.0'
 }
 
 group 'com.lukasbach.intellij'
 version '1.0.6'
-sourceCompatibility = 1.8
+sourceCompatibility = 17
 
 repositories {
   mavenCentral()
@@ -23,8 +23,8 @@ buildSearchableOptions {
 patchPluginXml {
   version = project.version
   sinceBuild = '202'
-  untilBuild = '231.*' // https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html#intellij-platform-based-products-of-recent-ide-versions
-  changeNotes.set("<em>v1.0.0</em>")
+  untilBuild = '232.*' // https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html#intellij-platform-based-products-of-recent-ide-versions
+  changeNotes.set("<em>v1.0.1</em>")
   // changeNotes """
   //   <em>v1.0.0</em><br />
   //   Initial Release"""

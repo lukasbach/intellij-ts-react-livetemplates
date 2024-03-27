@@ -57,6 +57,8 @@
 
       <p>Checkout <a href="https://github.com/lukasbach/intellij-ts-react-livetemplates">github.com/lukasbach/intellij-ts-react-livetemplates</a>
       for details on available snippets.</p>
+
+      <p>If the library benefits, you can consider supporting it by <a href="https://github.com/sponsors/lukasbach">sponsoring me</a>.</p>
     ]]></description>
 
   <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->

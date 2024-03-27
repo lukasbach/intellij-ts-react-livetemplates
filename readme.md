@@ -35,6 +35,8 @@ Supported templates:
 - `usec`: _React.useCallback()_
 
 
+If the library benefits, you can consider supporting it by [sponsoring me](https://github.com/sponsors/lukasbach).
+
 ## Template code
 
 

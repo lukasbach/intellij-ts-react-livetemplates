@@ -3,7 +3,7 @@ plugins {
   id 'org.jetbrains.intellij' version '1.15.0'
 }
 
-group 'com.lukasbach.intellij'
+group 'com.lukasbach.snippets'
 version '1.0.8'
 sourceCompatibility = 17
 

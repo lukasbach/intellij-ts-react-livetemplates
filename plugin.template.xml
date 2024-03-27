@@ -1,5 +1,5 @@
 <idea-plugin>
-  <id>com.lukasbach.intellij.snippets.typescriptreact</id>
+  <id>com.lukasbach.snippets.typescriptreact</id>
   <name>Live Templates for TypeScript and React</name>
   <!-- The <version> of this plugin is set by patchPluginXml.version in build.gradle -->
   <vendor email="lbach@outlook.de" url="https://lukasbach.com">Lukas Bach</vendor>

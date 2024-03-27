@@ -14,6 +14,8 @@ Supported templates:
 
 %DOCS_LIST%
 
+If the library benefits, you can consider supporting it by [sponsoring me](https://github.com/sponsors/lukasbach).
+
 ## Template code
 
 %DOCS%
